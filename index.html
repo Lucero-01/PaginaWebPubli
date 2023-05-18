@@ -1,0 +1,318 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0 user-scalable=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    
+    />
+    <link rel="stylesheet" href="estilo.css">
+    <title>Hospital Automotriz</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css" integrity="sha512-SzlrxWUlpfuzQ+pcUCosxcglQRNAq/DZjVsC0lE40xsADsfeQoEypE+enwcOiGjk/bSuGGKHEyjSoQ1zVisanQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="icon" href="img/icon.png">
+</head>
+
+
+<body>
+    <!-- SECCION I N I C I O -->
+    <section id="inicio">
+        <div class="contenido">
+            <header>
+                <div class="contenido-header">
+                    <h1>Electromecánica</h1>
+                    <nav id="nav" class="">
+                        <ul id="links">
+                            <li><a href="#inicio" class="seleccionado" onclick="seleccionar(this)">INICIO</a></li>
+                            <li><a href="#sobremi" onclick="seleccionar(this)">SOBRE MI</a></li>
+                            <li><a href="#servicios" onclick="seleccionar(this)">SERVICIOS</a></li>
+                            <li><a href="#portfolio" onclick="seleccionar(this)">PORTAFOLIO</a></li>
+                            <li><a href="#contacto" onclick="seleccionar(this)">CONTACTO</a></li>
+                        </ul>
+                    </nav>
+
+                    <!-- Icono del menu responsive -->
+                    <div id="icono-nav" onclick="responsiveMenu()">
+                        <i class="fa-solid fa-bars"></i>
+                    </div>
+
+
+                    <div class="redes">
+                       <!--  <a href="#"><i class="fa-brands fa-youtube"></i></a> -->
+                        <a href="https://www.facebook.com/people/Hospital-de-diagn%C3%B3stico-Automotriz/100092525477490/?mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a>
+                       <!-- <a href="#"><i class="fa-brands fa-instagram-square"></i></a> -->
+
+                    </div>
+                </div>
+            </header>
+            <div class="presentacion">
+                <p class="bienvenida">Bienvenidos</p>
+                <h2>Soy <span>Pablo</span>, Ingeniero</h2>
+                <p class="descripcion">"Calidad significa hacer las cosas bien cuando nadie te esta viendo". Ingeniería Automotriz</p>
+                <a href="#portfolio">Ir a Portafolio</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION S O B R E M I -->
+    <section id="sobremi">
+        <div class="contenedor-foto">
+            <img src="img/foto.jpeg" alt="">
+        </div>
+        <div class="sobremi">
+            <p class="titulo-seccion">Sobre Mi</p>
+            <h2>Hola, Soy <span>Pablo</span> </h2>
+            <h3>Ingeniero</h3>
+            <p>Pablo Emilio Sánchez Hernández, soy egresado del la Escuela Superior de. Ingeniería Mecánica y Electrica  ESIME ZACATENCO, contamos con especialidad en autos europeos BMW, Mercedes Benz, Alfa Romeo, Audi, asi como autos americanos y asiáticos</p>
+            <p>Confía en nosotros  tenemos la solución</p>
+            <p>¡¡Deja de batallar!!</p>
+            <!--<a href="#">Descargar CV</a>-->
+        </div>
+    </section>
+
+    <!-- SECCION S E R V I C I O S -->
+    <section id="servicios">
+        <h3 class="titulo-seccion">MIS SERVICIOS</h3>
+        <div class="fila">
+            <div class="servicio">
+                <span class="icono"> <i class="fa-sharp fa-solid fa-laptop-code"></i></span>
+                <h4>Programación de módulos computadoras y llaves </h4>
+                <hr>
+                <!--<ul class="servicios-tag">
+                    <li>Web</li>
+                    <li>Graphic</li>
+                    <li>SEO</li>
+                </ul> -->
+                <p>En este apartado realizamos la hermanación de los diferentes módulos automotrices a la computadora del vehículo y la llave, algunos también la dirección electroasistida</p>
+            </div>
+            <div class="servicio">
+                <span class="icono"> <i class="fa-solid fa-crosshairs"></i></span>
+                <h4>Diagnóstico con Escaner</h4>
+                <hr>
+                <!--<ul class="servicios-tag">
+                    <li>Web</li>
+                    <li>Graphic</li>
+                    <li>SEO</li>
+                </ul>-->
+                <p>Se realizan estudios a fondo en el automóvil con diferentes aparatos como son el osiloscopio, vacometro, compresometro, gasómetro, etc para poder llegar a la falla real</p>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i  class="fa-solid fa-wrench"></i></i></span>
+                <h4>Reparación de transmisiones automáticas</h4>
+                <hr>
+                <!--<ul class="servicios-tag">
+                    <li>CVT</li>
+                    <li>Robotizadas</li>
+                    <li>DSG</li>
+                </ul>-->
+                <p>CVT</p>
+                <p>Robotizadas</p>
+                <p>DSG</p>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="servicio">
+                <span class="icono"> <i class="fa-solid fa-gears"></i></span>
+                <h4>Cambios de Clutch</h4>
+                <hr>
+                <!--<ul class="servicios-tag">
+                    <li>Normales</li>
+                    <li>Húmedos</li>
+                    <li>Semihumedos</li>
+                </ul>-->
+                <p>Normales</p>
+                <p>Húmedos</p>
+                <p>Semihumedos</p>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-arrow-trend-up"></i></span>
+                <h4>Ajuste de motor</h4>
+                <hr>
+               <!--<ul class="servicios-tag">
+                    <li>Web</li>
+                    <li>Graphic</li>
+                    <li>SEO</li>
+                </ul>-->
+                <p>Consiste en cambiar piezas y refacciones del motor pero a partir del trabajo y/o del ojo humano. Es decir, no con los detalles que ofrecen las máquinas rectificadoras especializadas.</p>
+            </div>
+            <div class="servicio">
+                <span class="icono"><i class="fa-solid fa-car"></i></span>
+                <h4>Reparación de módulos de carrocería</h4>
+                <hr>
+                <!--<ul class="servicios-tag">
+                    <li>Web</li>
+                    <li>Graphic</li>
+                    <li>SEO</li>
+                </ul>-->
+                <p>TIPM</p>
+                <p>fscim</p>
+                <p>BCM</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCION H A B I L I D A D E S -->
+    <div class="contenedor-skills" id="skills">
+        <h3>ESPECIALIDADES </h3>
+        <div class="skill">
+            <div class="info">
+                <p> <span class="lista"> </span>Sistemas mecánicos</p>
+                <span class="porcentaje">95%</span>
+            </div>
+
+            <div class="barra">
+                <div class="" id="html"></div>
+            </div>
+        </div>
+        <div class="skill">
+            <div class="info">
+                <p> <span class="lista"> </span> Circuitos Eléctricos</p>
+                <span class="porcentaje">90%</span>
+            </div>
+
+            <div class="barra">
+                <div class="" id="js"></div>
+            </div>
+        </div>
+        
+        
+    </div>
+
+    <!-- SECCION PORTAFOLIO -->
+    <section id="portfolio">
+        <h3 class="titulo-seccion">Mis Trabajos</h3>
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/proyecto1.png" alt="">
+                <div class="info">
+                    <h4>Lineas de  comunicación</h4>
+
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/proyecto2.png" alt="">
+                <div class="info">
+
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/proyecto3.png" alt="">
+                <div class="info">
+                    <h4>Módulos ABS</h4>
+
+                </div>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/proyecto4.png" alt="">
+                <div class="info">
+
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/proyecto5.png" alt="">
+                <div class="info">
+                    <h4>Módulos de dirección</h4>
+
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/proyecto6.png" alt="">
+                <div class="info">
+
+                </div>
+            </div>
+        </div>
+        <div class="fila">
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/proyecto7.png" alt="">
+                <div class="info">
+                    <h4>Direcciones asistidas</h4>
+
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/proyecto8.png" alt="">
+                <div class="info">
+
+                </div>
+            </div>
+            <div class="proyecto">
+                <div class="overlay"></div>
+                <img src="img/proyecto9.png" alt="">
+                <div class="info">
+                    <h4>Computadoras ECU y ECM</h4>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- SECCTION C O N T A C T O -->
+    <section id="contacto">
+        <h3 class="titulo-seccion">Contáctanos ahora</h3>
+        <div class="contenedor-form">
+            <form action="https://formspree.io/f/mnqyryon" method="post">
+                <div class="fila mitad">
+                    <input type="text" name="nombre" id="nombres" placeholder="Nombre Completo *" class="input-mitad">
+                    <input type="email" name="correo" id="correo" placeholder="Dirección de Email" class="input-mitad">
+                </div>
+                <div class="fila">
+                    <input type="text" name="tema" id="temas" placeholder="Asunto..." class="input-full">
+                </div>
+                <div class="fila">
+                    <textarea name="asunto" id="asunto" cols="30" rows="10" placeholder="Tu Mensaje..." class="input-full"></textarea>
+                </div>
+
+                <input type="submit" value="Enviar Mensaje" class="btn-enviar">
+            </form>
+            <br>
+            <!--GOOGLE MAPS-->
+            <h3 class="titulo-seccion">ubicación</h3>
+            
+            <iframe src="https://www.google.com/maps/embed?pb=!3m2!1ses-419!2smx!4v1684450069920!5m2!1ses-419!2smx!6m8!1m7!1sS6jZp1X15CoBKCMIER3IQw!2m2!1d19.30190540573005!2d-98.93315597325754!3f149.5333369914092!4f2.250762970167088!5f0.7820865974627469"
+            width="100%" height="600" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            
+        </div>
+
+
+        <!--WHATSAPP ICON-->
+    <div class="btn-wsp">
+        <a href="https://api.whatsapp.com/send?phone=5215578526693&text=Hola vengo de tu pagina web me interesa:">
+        <img src="img/whatsapp.png" class="img-fluid"></a>
+         
+        
+
+    </div>
+    </section>
+
+    <!-- SECCION FOOTER -->
+    <footer>
+        <p>Todos los derechos reservados - 2023</p>
+        <div class="redes">
+          <!--  <a href="#"><i class="fa-brands fa-youtube"></i></a> -->
+            <a href="https://www.facebook.com/people/Hospital-de-diagn%C3%B3stico-Automotriz/100092525477490/?mibextid=ZbWKwL"><i class="fa-brands fa-facebook"></i></a>
+          <!--  <a href="#"><i class="fa-brands fa-instagram-square"></i></a>-->
+        </div>
+        <!-- Contador de visitas 
+<center><a href="https://websmultimedia.com/contador-de-visitas-gratis" title="Contador De Visitas Gratis">
+    <img style="border: 0px solid; display: inline;" alt="contador de visitas" src="https://websmultimedia.com/contador-de-visitas.php?id=9783"></a></center>
+    <!--Fin Contador de visitas -->
+
+    </footer>
+    
+
+    <script src="script.js"></script>
+</body>
+
+</html>
